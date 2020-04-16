@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Signin And Signup
+        link(rel="stylesheet", href="/css/login_of_drivers.css")
+    body
+        .login-wrap
+            .login-html
+                input.sign-in(id="tab-1",type="radio",name="tab",checked) 
+                label.tab(for="tab-1")  Sign In
+                input.sign-up(id="tab-2",type="radio",name="tab")
+                label(for="tab-2" class="tab" style="visibility : hidden")  Sign Up
+                .login-form
+                    .sign-in-htm
+                        form(action="/admin" method="POST")
+                            .group
+                                label.label(for="user") Trucker Driver name
+                                input.input(id="user", type="text")
+                            .group
+                                label.label(for="pass") Password
+                                input(id="pass", type="password", class="input", data-type="password")
+                            .group
+                                input(id="check", type="checkbox", class="check")
+                                label(for="check")
+                                    span
+                                        icon Keep me Signed in
+                            .group
+                                input(type="submit", class="button", value="Sign In")
+                        .hr
+                        .foot-lnk
+                            a(href="#forgot") Forgot Password?
+                    //- .sign-up-htm
+                    //-     .group
+                    //-         label.label(for="user") Username
+                    //-         input.input(id="user", type="text")
+                    //-     .group
+                    //-         label.label(for="pass") Password
+                    //-         input.input(id="pass", type="password", data-type="password")
+                    //-     .group
+                    //-         label.label(for="pass") Repeat Password
+                    //-         input.input(id="pass", type="password" , data-type="password")
+                    //-     .group
+                    //-         label.label(for="pass") Mobile number 
+                    //-         input.input(id="pass", type="text")
+                    //-     .group
+                    //-         input.button(type="submit" value="Sign Up")
+                    //-     .hr
+                    //-     .foot-lnk
+                    //-         label(for="tab-1") Already Member?

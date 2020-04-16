@@ -1,0 +1,58 @@
+extends layout/main-layout.pug
+
+block style
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css", integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO", crossorigin="anonymous")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.7.2/css/all.css", integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr", crossorigin="anonymous")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800")
+    link(rel="stylesheet", href="/css/style.css")
+
+block content
+    ul.nav.nav-tabs.navbar-expand-md
+        li.nav-item
+            a.active.nav-link(href="/home.html") Home
+        |
+        |
+        -var classexmp = 'nav-link';
+        li.nav-item
+            a(class = classexmp)(href="#") About
+        li.nav-item
+            a.nav-link(href="/home/contact") Contact
+    section.container-fluid.px-0
+        div.row.align-items-center
+            div.col-lg-6
+                div.text-black.text-center.d-none.d-lg-block.mt-5(id="headingGroup")
+                    h1 GARBAGE FREE INFO PAGE   
+            div.col-lg-6.px-0
+                img.img-fluid(src="https://images.unsplash.com/photo-1567177321487-aa67191fc94e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",alt="")
+    section.container-fluid.px-0
+        div.row.align-items-center.content
+            div.col-md-6.order-2.order-md-1.px-0
+                img.img-fluid(src="https://images.unsplash.com/photo-1564712073211-2c2084417d46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",alt="")
+            div.col-md-6.text-center.order-1.order-md-2
+                div.row.justify-content-center
+                    div.col-10.col-lg-8.blurb.mb-5.mb-md-0
+                        h3 WE SOLVE THIS
+                        i.fas.fa-trash-alt
+                        ol
+                            li Unavailability of garbage trucks in your area
+                            li The waste segregated in different compartments
+                            li Overflow of the street dustbins
+        div.row.align-items-center.content 
+            div.col-md-6.text-center
+                div.row.justify-content-center
+                    div.col-10.col-lg-8.blurb.mb-5.mb-md-0
+                        h3 SOLUTION
+                        i.fas.fa-trash-alt
+                        p The location of all the dustbins in the area will be marked on maps so that in the absence of the garbage collecting vehicles one can easily throw it in the nearby dustbins.For tracking we use GPS which will provide exact location of garbage trucks
+            div.col-md-6.px-0
+                img.img-fluid(src="https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80", alt="")
+        div.row.align-items-center.content
+            div.col-md-6.order-2.order-md-1.px-0
+                img.img-fluid(src="https://images.unsplash.com/photo-1542381259-948cb27489b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",alt="")
+            div.col-md-6.text-center.order-1.order-md-2
+                div.row.justify-content-center
+                    div.col-10col-lg-8.blurb.mb-5.mb-md-0
+                        h3 IMPLEMENTATION
+                        i.fas.fa-trash-alt
+                        p The garbage mini-vans will be divided into three departments: Bio-degradable,Non-biodegradable and E-waste.Segregated was can be easily re-used and recycled and bio-degradable waste can also be used in the production of bio-gas
+    

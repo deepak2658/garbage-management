@@ -1,0 +1,27 @@
+{
+  "name": "wastemanagement",
+  "version": "1.0.0",
+  "description": "Web to better manangemebt of the waste",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mangodb": "^1.0.0",
+    "mongodb": "^3.5.2",
+    "mysql2": "^2.1.0",
+    "pug": "^2.0.4",
+    "sequelize": "^5.21.3",
+    "socket.io": "^2.3.0"
+  }
+}

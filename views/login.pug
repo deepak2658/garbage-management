@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Signin And Signup
+        link(rel="stylesheet", href="/css/login_of_drivers.css")
+    body
+        .login-wrap
+            .login-html
+                input.sign-in(id="tab-1",type="radio",name="tab",checked) 
+                label.tab(for="tab-1")  Sign In
+                input.sign-up(id="tab-2",type="radio",name="tab" checked)
+                label(for="tab-2" class="tab")  Sign Up
+                .login-form
+                    .sign-in-htm
+                        form(action="/home/mapsbootsrap.js" method="POST")
+                            .group
+                                label.label(for="user") EMAIL
+                                input.input(id="user", type="text" name="email")
+                            .group
+                                label.label(for="pass") Password
+                                input(id="pass", type="password", class="input",name = "pass" ,data-type="password")
+                            .group
+                                input(id="check", type="checkbox", class="check")
+                                label(for="check")
+                                    span
+                                        icon Keep me Signed in
+                            .group
+                                input(type="submit", class="button", value="Sign In")
+                        .hr
+                        .foot-lnk
+                            a(href="#forgot") Forgot Password?
+                    .sign-up-htm
+                        form(action="/add-user" method="POST")    
+                            .group
+                                label.label(for="fullname" ) Full Name
+                                input.input(id="fullname",name="fullname",required, type="text", )
+                            .group
+                                label.label(for="user" ) Username
+                                input.input(id="user",required ,name="user", type="text")
+                            .group
+                                label.label(for="pass" ) Password
+                                input.input(id="pass",name="pass",required, type="password", data-type="password")
+                            .group
+                                label.label(for="pass") Repeat Password
+                                input.input(id="passrep", type="password" ,required, data-type="password")
+                            script.
+                                const password =  document.getElementById('pass').value;
+                                const repeat_password = document.getElementById('passrep').value;
+                                if(password != repeat_password){
+                                    document.getElementById('hidden_p').style.visibility = visible;
+                                }
+                            .group
+                                label.label(for="email") EMAIL 
+                                input.input(id="email",name="email", type="text",required)
+                            .group
+                                label.label(for="sq") Security Question : Your Pet name : 
+                                input.input(id="sq",name="sq", type="text",required)
+
+                            .group
+                                input.button(type="submit" id="submit" value="Sign Up")
+                            .hr
+                            .foot-lnk
+                                label(for="tab-1") Already Member?
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//- extends layout/main-layout.pug
+
+//- block style
+//-     link(rel="icon", type="image/png", href="/images/icons/favicon.ico")
+//-     link(rel="stylesheet", type="text/css", href="/css/3rdPP/bootstrap.min.css")
+//-     link(rel="stylesheet" ,type="text/css", href="/css/3rdPP/font-awesome.min.css")
+//-     link(rel="stylesheet", type="text/css", href="/css/3rdPP/icon-font.min.css")
+//-     link(rel="stylesheet", type="text/css", href="/css/3rdPP/animate.css")
+//-     link(rel="stylesheet", type="text/css", href="/css/3rdPP/hamburgers.min.css")
+//-     link(rel="stylesheet", type="text/css", href="/css/3rdPP/animsition.min.css")
+//-     link(rel="stylesheet", type="text/css", href="/css/3rdPP/select2.min.css")
+//-     link(rel="stylesheet", type="text/css", href="/css/3rdPP/daterangepicker.css")
+//-     link(rel="stylesheet", type="text/css", href="/css/util.css")
+//-     link(rel="stylesheet", type="text/css", href="/css/main.css")
+
+//- block content
+//-     body(style="background-color: #666666;")
+//-         .limiter
+//-             .container-login100
+//-                 .wrap-login100
+//-                     form.login100-form.validate-form(action = "/home/mapsbootsrap.js" method="POST")
+//-                         span.login100-form-title.p-b-43 Login to Garbage Free
+//-                         .wrap-input100.validate-input(data-validate = "Valid email is required: ex@abc.xyz")
+//-                             input.input100(type="text", name="email")
+//-                             span.focus-input100
+//-                             span.label-input100 Email
+//-                         .wrap-input100.validate-input(data-validate="Password is required")
+//-                             input.input100(type="password", name="pass")
+//-                             span.focus-input100
+//-                             span.label-input100 Password
+//-                         .flex-sb-m.w-full.p-t-3.p-b-32
+//-                             .contact100-form-checkbox
+//-                                 input.input-checkbox100(id="ckb1", type="checkbox", name="remember-me")
+//-                                 label.label-checkbox100(for="ckb1") Remember me
+                                
+//-                             div
+//-                                 a(href="#" class="txt1") Forgot Password?
+                            
+//-                         .container-login100-form-btn
+//-                             button.login100-form-btn(type="submit") Login
+                            
+//-                         .text-center.p-t-46.p-b-20
+//-                             span.txt2 or sign up using
+                            
+//-                         .login100-form-social.flex-c-m
+//-                             a.login100-form-social-item.flex-c-m.bg1.m-r-5(href="#" )
+//-                                 i.fa.fa-facebook-f(aria-hidden="true")
+//-                             a.login100-form-social-item.flex-c-m.bg2.m-r-5(href="#")
+//-                                 i.fa.fa-twitter(aria-hidden="true")
+//-                         .login100-more(style="background-image: url('/images/rip.jpg');")                    
+//-     script(src="/js/jquery-3.2.1.min.js")
+//-     script(src="/js/popper.js")
+//-     script(src="/js/animsition.min.js")
+//-     script(src="/js/popper.js")
+//-     script(src="/js/bootstrap.min.js")
+//-     script(src="/js/select2.min.js")
+//-     script(src="/js/moment.min.js")
+//-     script(src="/js/daterangepicker.js")
+//-     script(src="/js/countdowntime.js")
+//-     script(src="/js/main.js")
+    

@@ -1,0 +1,38 @@
+extends layout/main-layout.pug
+
+block style
+    link(rel="stylesheet", href="/css/register.css")
+block content
+    form(action="/action_page.php")
+        .container        
+            h1
+                center Welcome to Garbage free
+            h1
+                center Signup
+            hr
+            center
+                label(for="Name")
+                    b Username
+                input(type="text", placeholder="Enter Name", name="name", required)
+                br
+                label(for="email")
+                    b Email
+                input(type="text", placeholder="Enter Email", name="email", required) 
+                br
+                label(for="no")
+                    b Mobile Number
+                input(type="password", placeholder="Enter Mobile Number", name="no", required)
+                br
+                label(for="psw")
+                    b Password
+                input(type="password", placeholder="Enter Password", name="psw", required)
+                br
+                label(for="psw-repeat")
+                    b Repeat Password
+                input(type="password" placeholder="Repeat Password" name="psw-repeat" required)
+                br
+                hr
+                button.registerbtn(type="submit") Register
+        .container.signin
+            p Already have an account 
+                a(href="#") Sign in

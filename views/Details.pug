@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{pageTitle}
+    body
+        center
+            h1 Drivers who are at your service to serve the society
+            |
+            mixin Display(id,name,no,place,age)
+                <div id="Details" class="container"> 
+                    div(class="btn" id="id")
+                        h8  #{id}
+                    div(class="btn" id="name")
+                        h8  #{name}
+                    div(class="btn" id="mobile_number")
+                        h8  #{no}
+                    div(class="btn" id="place")
+                        h8  #{place} 
+                    div(class="btn" id="age")
+                        h8  #{age}
+            |
+            each driver in driverDetails
+                +Display(driver.id,driver.driverName,driver.phoneNumber,driver.place,driver.age)
+                
+                

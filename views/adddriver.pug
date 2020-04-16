@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Add Driver
+    body
+        center
+            h1 Add a New Driver
+            form(action="/done-adding" method="POST")
+                br
+                br
+                label   Driver name : 
+                    input(type="text" required placeholder="driverName" name="driverName")
+                br
+                br
+                label   Phone number : 
+                    input(type="number" required placeholder="number" name="number") 
+                br
+                br
+                label   Place : 
+                    input(type="text" required placeholder="place" name="place")
+                br
+                br
+                label   Age : 
+                    input(type="number" required placeholder="age" name="age" onclick="alert('Driver added')")
+                br
+                button(type="submit" id="submit") Save
+        script.
+            document.getElementById('submit').addEventHandler('click',()=>{
+                document.alert('Driver Added');
+            });

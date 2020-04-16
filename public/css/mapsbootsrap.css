@@ -1,0 +1,49 @@
+body {
+  background-color: #141414;
+  font-family:  'Nunito', sans-serif;
+}
+.division{
+	color:white;
+	padding-top:2%;
+	font-family:  'Nunito', sans-serif;
+}
+.mt-0
+{
+font-weight: 700px;
+}	
+}
+.display-4{
+font-family:'Nunito',sans-serif;
+font-weight: 700px;
+}
+.jumbotron{
+	background-image:url("https://images.unsplash.com/photo-1511189330313-b0af599a6f5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+     background-position: center;
+     background-size: cover;
+     background-repeat:no-repeat;
+}
+.imaging{
+	background-size:contain;
+}
+
+#map{
+	padding-top: 2%;
+}
+.paras{
+	text-align: center;
+	padding-bottom: 4%;
+	color:white;
+}
+.cards{
+	padding-top:5%;
+	padding-bottom:5%;
+}
+.imagin{
+	padding-top:1%;
+}
+h6{
+	color:white;
+	text-align:center;
+	padding-top:4%;
+	padding-right:1.5%;
+}
